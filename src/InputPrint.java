@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.zip.InflaterInputStream;
 
 public class InputPrint {
     public int a;
@@ -29,7 +28,7 @@ public class InputPrint {
         System.out.println("Add a+b =: " + sum1);
         sum2 = InputPrint.this.c + InputPrint.this.d;
         System.out.println("Add b+d =: " + sum2);
-        boolean sum_res1 = (sum1 > sum2) ? true  : false;
+        boolean sum_res1 = (sum1 > sum2) ? true : false;
         System.out.println("The first sum1 more than sum2: " + sum_res1);
 
         sum1 += 1;
@@ -38,10 +37,10 @@ public class InputPrint {
         sum2 -= 2;
         System.out.println("Sum2 was reduced by 2: " + sum2);
 
-        boolean sum_res2 = (sum1 > sum2) ? true  : false;
+        boolean sum_res2 = (sum1 > sum2) ? true : false;
         System.out.println("The first sum1 more than sum2:" + sum_res2);
 
-        boolean result3 = (sum1 % 2 == 0 && sum2 % 2 == 0) ? true : false;
+        boolean result3 = sum1 % 2 == 0 && sum2 % 2 == 0;
         System.out.println("The sum is a multiple of 2: " + result3);
 
 
